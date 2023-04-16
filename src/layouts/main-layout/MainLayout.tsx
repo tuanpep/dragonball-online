@@ -1,14 +1,16 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import Header from '../../components/header';
 
-type Props = {}
+type Props = {};
 
 const MainLayout = (props: Props) => {
   return (
     <div>
-        <Outlet/>
+      <Header />
+      <Outlet />
     </div>
-  )
-}
+  );
+};
 
-export default MainLayout
+export default MainLayout;
