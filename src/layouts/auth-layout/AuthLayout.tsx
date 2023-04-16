@@ -1,14 +1,14 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 
-type Props = {}
+type Props = {};
 
 const AuthLayout = (props: Props) => {
   return (
     <div>
-        <Outlet/>
+      <Outlet />
     </div>
-  )
-}
+  );
+};
 
-export default AuthLayout
+export default AuthLayout;
