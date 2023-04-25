@@ -6,7 +6,7 @@ type Props = {};
 
 const Download = (props: Props) => {
   return (
-    <div className="bg-center bg-cover" style={{ backgroundImage: `url(${background5})` }}>
+    <div className="bg-center bg-cover">
       <div className="backdrop-brightness-50 text-white w-full min-h-screen flex flex-col items-center justify-center">
         <h1 className="text-5xl font-bold uppercase">Tải về</h1>
 

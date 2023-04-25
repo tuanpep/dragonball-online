@@ -58,23 +58,11 @@ const SocialButton = ({
 
 export default function Footer() {
   return (
-    <Box
-      bg={useColorModeValue('gray.200', 'gray.900')}
-    >
-      <Container
-        as={Stack}
-        maxW={'6xl'}
-        py={4}
-        direction={{ base: 'column', md: 'row' }}
-        spacing={4}
-        justify={{ base: 'center', md: 'center' }}
-        align={{ base: 'center', md: 'center' }}
-      >
-        <p className='max-w-xl text-center text-gray-900'>
-          Trò chơi không có bản quyền chính thức, hãy cân nhắc kỹ trước khi tham gia. <br /> Chơi quá 180
-          phút một ngày sẽ ảnh hưởng đến sức khỏe.
-        </p>
-      </Container>
-    </Box>
+    <div className="flex justify-center items-center py-4 ">
+      <p className="max-w-xl text-center text-gray-100">
+        Trò chơi không có bản quyền chính thức, hãy cân nhắc kỹ trước khi tham gia. <br /> Chơi quá
+        180 phút một ngày sẽ ảnh hưởng đến sức khỏe.
+      </p>
+    </div>
   );
 }

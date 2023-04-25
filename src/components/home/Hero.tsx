@@ -1,19 +1,18 @@
-import { Box, Button, Container, Heading, Stack, Text, createIcon } from '@chakra-ui/react';
+import { Box, Button, Container, Heading, Stack, createIcon } from '@chakra-ui/react';
 
-import background2 from '../../assets/images/background2.png';
 import background from '../../assets/images/background.png';
 import FeatureSection from './FeatureSection';
 
 export default function Hero() {
   return (
-    <div className="w-full  bg-cover bg-center" style={{ backgroundImage: `url(${background})` }}>
-      <div className="h-full pb-4 md:pb-0 min-h-[100vh] backdrop-brightness-50">
+    <div className="w-full">
+      <div className="h-full pb-4 md:pb-0 min-h-screen">
         <Container maxW={'3xl'}>
           <Stack
             as={Box}
             textAlign={'center'}
-            spacing={{ base: 8, md: 14 }}
-            py={{ base: 20, md: 36 }}
+            spacing={{ base: 8, md: 9 }}
+            py={{ base: 20, md: 32 }}
           >
             <Heading
               fontWeight={600}
@@ -52,7 +51,7 @@ export default function Hero() {
             </div>
           </Stack>
         </Container>
-        <Container maxW={'6xl'}>
+        <Container maxW={'6xl'} className="pb-8">
           <FeatureSection />
         </Container>
       </div>
